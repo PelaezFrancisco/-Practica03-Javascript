@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/calculadora.css">
+    <title>Calculadora</title>
+
+    <script src="../javaScript/calculadora.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div id=calculadora>
+            <h2>Calculadora</h2>
+            <div id="cabecera">
+                <div class="pantalla"> </div> 
+                <button class="limpiar" onclick="pulsada('C')">C</button>
+            </div>
+
+        <div class="teclas">
+            <button onclick="pulsada('1')">1</button>
+            <button onclick="pulsada('2')">2</button>
+            <button onclick="pulsada('3')">3</button>
+            <button class="operador" onclick="pulsada('/')">/</button>
+            <br><br>
+            <button onclick="pulsada('4')">4</button>
+            <button onclick="pulsada('5')">5</button>
+            <button onclick="pulsada('6')">6</button>
+            <button class="operador" onclick="pulsada('-')">-</button>
+            <br><br>
+            <button onclick="pulsada('7')">7</button>
+            <button onclick="pulsada('8')">8</button>
+            <button onclick="pulsada('9')">9</button>
+            <button class="operador" onclick="pulsada('+')">+</button>
+            <br><br>
+            <button onclick="pulsada('0')">0</button>
+            <button onclick="pulsada('.')">.</button>
+            <button class="igual" onclick="pulsada('=')">=</button>
+            <button class="operador" onclick="pulsada('*')">x</button>
+        </div>
+    </div> 
+</body>
+</html>
