@@ -16,58 +16,58 @@
 
 <section class="sectF">
   <h1>Formulario</h1>
-  <form id="formulario" method="POST" action="" onsubmit="return validarCampos()">
+  <form id="formulario" method="POST" action="php/formulario.php" onsubmit="return validarCampos()">
     <fieldset>
       <!--Textfield Cedula-->
       <p class="pa">
         <label for="cedula">Cedula (*)</label>
-        <input type="text" id="inCedula" class="inCedula" placeholder="Ingrese el número de cedula ..." onkeyup="validarCedula(this)"/>
-        <div id="dfalla" class="dfalla"></div>
+        <input type="text" name="inCedula" id="inCedula" class="inCedula" placeholder="Ingrese el número de cedula ..." onkeyup="validarCedula(this)"/>
+        <div id="dfalla1" class="dfalla"></div>
       </p>
       <!--Textfield Nombres-->
       <p class="pa">
         <label for="nombres">Nombres (*)</label>
         <input type="text" id="inNombres" class="inNombres" onkeyup="validarLetras(this)"/>
-        <div id="dfalla" class="dfalla"></div>
+        <div id="dfalla2" class="dfalla"></div>
       </p>
        <!--Textfield Apellidos-->
       <p class="pa">
         <label for="apellidos">Apellidos (*)</label>
-        <input type="text" id="inApellidos" class="inApellidos" onkeyup="validarLetras()"/>
-        <div id="dfalla" class="dfalla"></div>
+        <input type="text" id="inApellidos" class="inApellidos" onkeyup="validarLetras(this)"/>
+        <div id="dfalla3" class="dfalla"></div>
       </p>
       <!--Textfield Direccion-->
       <p class="pa">
         <label for="direccion">Direccion (*)</label>
         <input type="text" id="inDireccion" class="inDireccion"/>
-        <div id="dfalla" class="dfalla"></div>
+        <div id="dfalla4" class="dfalla"></div>
       </p>
       <!--Textfield Telefono-->
       <p class="pa">
         <label for="telefono">Telefono (*)</label>
-        <input type="text" id="inTelefono" class="inTelefono"/>
-        <div id="dfalla" class="dfalla"></div>
+        <input type="text" id="inTelefono" class="inTelefono" onkeyup="validarTelefono(this)"/>
+        <div id="dfalla5" class="dfalla"></div>
       </p>
       <!--Textfield Fecha-->
       <p class="pa">
         <label for="fecha">Fecha de Nacimiento (*)</label>
-        <input type="text" id="inFecha"class="inFecha"/>
-        <div id="dfalla" class="dfalla"></div>
+        <input type="text" id="inFecha" class="inFecha" onkeyup="validarFecha(this)"/>
+        <div id="dfalla6" class="dfalla"></div>
       </p>
       <!--Textfield Email-->
       <p class="pa">
         <label for="email">Email personal (*)</label>
-        <input type="text" id="inEmail"class="inEmail"/>
-        <div id="dfalla" class="dfalla"></div>
+        <input type="text" id="inEmail" class="inEmail" onkeyup="validarEmail(this)"/>
+        <div id="dfalla7" class="dfalla"></div>
       </p>
       <!--Textfield Password-->
       <p class="pa">
         <label for="password">Contraseña (*)</label>
-        <input type="password" id="inFecha"class="inFecha"/>
-        <div id="dfalla" class="dfalla"></div>
+        <input type="password" id="inPassword" class="inPassword" onkeyup="validarPassword(this)"/>
+        <div id="dfalla8" class="dfalla"></div>
       </p>
-
-      <button type="button" class="boton" onclick="validarCampos()">Enviar</button>
+      
+      <button type="submit" class="boton">Enviar</button>
     </fieldset>
 
   </form>
