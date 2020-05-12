@@ -11,34 +11,50 @@ function validarCampos()
     var con=false;
     for(var i = 0; i < document.forms[0].elements.length; i++){
         var elemento = document.forms[0].elements[i];
-        if(elemento.value == '' && elemento.type == 'text'){    //Si el campo esta vacio
+        //console.log(elemento.value == 'undefined');
+        //console.log(elemento.value.);
+        if(elemento.value == '' && (elemento.type == 'text' || elemento.type == 'password')){    //Si el campo esta vacio
+            console.log("Enrta a la huevada chucha que verga!!!!!!!!!!");
             if(elemento.id == 'inCedula'){  //Cedula Vacia
                 document.getElementById('dfalla1').innerHTML = '<p id="falla" class="falla">Campo Cedula esta vacio</p>'; 
                 elemento.style.border = '2px red solid';
+                return false;
             }
             if(elemento.id == 'inNombres'){ //Nombre Vacio
                 document.getElementById('dfalla2').innerHTML = '<p id="falla" class="falla">Campo Nombres esta vacio</p>'; 
                 elemento.style.border = '2px red solid';
+                return false;
             }
             if(elemento.id == 'inApellidos'){ //Apellido Vacio
                 document.getElementById('dfalla3').innerHTML = '<p id="falla" class="falla">Campo Apellidos esta vacio</p>'; 
                 elemento.style.border = '2px red solid';
+                return false;
             }
             if(elemento.id == 'inDireccion'){ //Direccion Vacio
                 document.getElementById('dfalla4').innerHTML = '<p id="falla" class="falla">Campo Direccion esta vacio</p>'; 
                 elemento.style.border = '2px red solid';
+                return false;
+            }
+            if(elemento.id == 'inTelefono'){ //Telefono Vacio
+                document.getElementById('dfalla5').innerHTML = '<p id="falla" class="falla">Campo Telefono esta vacio</p>'; 
+                elemento.style.border = '2px red solid';
+                return false;
             }
             if(elemento.id == 'inFecha'){ //Fecha Vacio
-                document.getElementById('dfalla5').innerHTML = '<p id="falla" class="falla">Campo Fecha esta vacio</p>'; 
+                document.getElementById('dfalla6').innerHTML = '<p id="falla" class="falla">Campo Fecha esta vacio</p>'; 
                 elemento.style.border = '2px red solid';
+                return false;
             }
             if(elemento.id == 'inEmail'){ //Email Vacio
-                document.getElementById('dfalla6').innerHTML = '<p id="falla" class="falla">Campo Email esta vacio</p>'; 
+                document.getElementById('dfalla7').innerHTML = '<p id="falla" class="falla">Campo Email esta vacio</p>'; 
                 elemento.style.border = '2px red solid';
+                return false;
             }
             if(elemento.id == 'inPassword'){ //Contrasena Vacio
-                document.getElementById('dfalla7').innerHTML = '<p id="falla" class="falla">Campo Password esta vacio</p>'; 
+                document.getElementById('dfalla8').innerHTML = '<p id="falla" class="falla">Campo Password esta vacio</p>'; 
                 elemento.style.border = '2px red solid';
+                console.log("Lalalala");
+                return false;
             }
             return false;
         }else{  //Si ningun campo esta vacio
@@ -53,6 +69,9 @@ function validarCampos()
             }
             if(elemento.id == 'inDireccion'){  //Direccion
                 dir=true;
+            }
+            if(elemento.id == 'inTelefono'){  //Direccion
+                tel=validarTelefono(elemento);
             }
             if(elemento.id == 'inFecha'){  //Fecha
                 fec=validarFecha(elemento);
@@ -72,11 +91,10 @@ function validarCampos()
         console.log("Ema"+ema);
         console.log("Con"+con);
         
-        if (ced==true&&nom==true&&ape==true&&dir==true&&fec==true&&ema==true&&con==true) {
+        if (ced==true&&nom==true&&ape==true&&dir==true&&fec==true&&ema==true&&con==true&&tel==true) {
             console.log("Esta todo")
             return true;
         }
-        
     }
 }
 //VALIDACION DE ENTRY ALFABETICA
