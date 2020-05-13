@@ -3,14 +3,23 @@
     margin: 1px;
 }
 body{
+    background-color: brown;
     text-align: center;
 }
 
+.headertf2{
+    margin-left: 5%;
+}
 #calculadora{
-    width: 250px;
+    margin-top: 70px;
+    margin-left: 40%;
+    /*border: blue solid 3px;*/
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    width: 20%;
     text-align: center;
     font: bold 14px Arial,sans-serif; 
-    margin: 0 auto;
+    padding-bottom: 200px;
     /*padding: 20px 20px 9px; */
 }
 #cabecera{
@@ -22,14 +31,15 @@ body{
     text-align: right;
     color: black; 
     float: left; 
-    width: 160px;
+    width: 295px;
     height: 25px;
 }
 #cabecera .limpiar { 
     border-radius: 3px; 
     color: black; 
     float: left; 
-    width: 50px;
+    width: 142px;
+    margin-left: 145px;
 }
 .teclas{
     width: auto;
@@ -42,19 +52,20 @@ button{
     cursor: grabbing;
     float: left;  
     text-align: center; 
-    width: 50px;
-    background:-moz-linear-gradient(top,#B1F2ED ,#6ABDF2);
-    background:-webkit-linear-gradient(top,#B1F2ED ,#6ABDF2);  
+    width: 70px;
+    background-color: darkgray;
+    
+}
+
+button.operador{
+    background-color: cadetblue;
 }
 button:hover{
-    background: #DCB2F2;
-}
-button.operador{
-    background: #C8F7E6;
+    background: lightgray;
 }
 button.operador:hover{
-    background: #F9E1EC;
+    background: lightgreen;
 }
 button.limpiar:hover{
-    background: #F9E1EC;
+    background: lightskyblue;
 }

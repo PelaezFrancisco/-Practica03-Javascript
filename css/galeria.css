@@ -1,0 +1,54 @@
+body{
+    background-color: brown;
+}
+h1{
+    font-size: 24pt;
+    font-style: oblique;
+    text-align: center;
+}
+.headertf2{
+    margin-left: 23%;
+}
+.sectG{
+    background-color: cornflowerblue;
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+}
+.boton{
+    width: 25%;
+    margin-left: 45%;
+    height: 40px;
+}
+#atras{
+    display: inline-block;
+    position: relative;
+    right: 200px;
+    top: 40px;
+}
+#inicio{
+    display: inline-block;
+    position: relative;
+    right: 46px;
+    top: 0px;
+}
+#siguiente{
+    display: inline-block;
+    position: relative;
+    left: 110px;
+    top: -40px;
+}
+.image{
+    border: black double 5px;
+    width: 501px;
+    height: 501px;
+    margin-left: -1px;
+}
+div{
+    width: 510px;
+    border: black solid 5px;
+    background-color: gray;
+    margin-left: 30%;
+    margin-bottom: 20px;
+    padding: 5px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+   <title>Galeria</title>
+   <meta charset="utf-8" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" type="text/css" href="../css/galeria.css" media="screen" />  <!--Llama a css-->
+   <script src="../javascript/galeria.js" type="text/javascript"></script>
+</head>
+  <body>
+    <header>
+       <a href="../index.html"><img src="../images/headertf2.png" alt="Logo News" class="headertf2"></a>
+    </header>
+
+<section class="sectG">
+  <h1>Galeria</h1>
+  <div class="dd" id="dd">
+      <img class="image" id="image" src="../images/scout.png" alt="ImgGaleria" >
+
+      
+  </div>
+  <div>
+    <button id="atras" class="boton" onclick="moverImg(-1,image)">Atras</button>
+      <button id="inicio" class="boton" onclick="calImg()">Inicio</button>
+      <button id="siguiente" class="boton" onclick="moverImg(+1)">Siguiente</button>
+  </div>
+
+</section>
+
+  </body>
+</html>
