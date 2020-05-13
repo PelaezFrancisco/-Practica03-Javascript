@@ -20,7 +20,6 @@ body{
     text-align: center;
     font: bold 14px Arial,sans-serif; 
     padding-bottom: 200px;
-    /*padding: 20px 20px 9px; */
 }
 #cabecera{
     width: 250px;
@@ -39,12 +38,15 @@ body{
     color: black; 
     float: left; 
     width: 142px;
-    margin-left: 145px;
+    margin: 7px;
+    margin-left: 155px;
+    margin-bottom: 4px;
 }
 .teclas{
     width: auto;
     height: auto;
     float: left;
+    margin: 7px;
 }
 button{
     border-radius: 3px; 
@@ -54,7 +56,6 @@ button{
     text-align: center; 
     width: 70px;
     background-color: darkgray;
-    
 }
 
 button.operador{

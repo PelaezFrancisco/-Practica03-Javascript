@@ -14,7 +14,6 @@ function validarCampos()
         //console.log(elemento.value == 'undefined');
         //console.log(elemento.value.);
         if(elemento.value == '' && (elemento.type == 'text' || elemento.type == 'password')){    //Si el campo esta vacio
-            console.log("Enrta a la huevada chucha que verga!!!!!!!!!!");
             if(elemento.id == 'inCedula'){  //Cedula Vacia
                 document.getElementById('dfalla1').innerHTML = '<p id="falla" class="falla">Campo Cedula esta vacio</p>'; 
                 elemento.style.border = '2px red solid';
